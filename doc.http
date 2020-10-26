@@ -1,0 +1,25 @@
+# ### Registration
+# POST http://127.0.0.1:8000/auth/registration/ HTTP/1.1
+# Content-Type: application/json
+
+# {
+#     "username": "oyti1",
+#     "email": "oyti1@example.com",
+#     "password1": "oyti1234",
+#     "password2": "oyti1234"
+# }
+
+### Login
+POST http://127.0.0.1:8000/auth/login/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "oyti1",
+    "email": "oyti1@example.com",
+    "password": "oyti1234"
+}
+
+### this is Me
+GET http://127.0.0.1:8000/me/ HTTP/1.1
+Content-Type: application/json
+Authorization: Token 0befe12941aad89185aa9d693fe742baf84e711c
